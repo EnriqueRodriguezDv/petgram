@@ -4,10 +4,13 @@ const path = require("path");
 const WorkboxWebpackPlugin = require("workbox-webpack-plugin")
 
 module.exports = {
+  entry: path.resolve(__dirname, "src/index.js") ,
   output: {
+    path: path.resolve(__dirname, "dist"),
     filename: "app.bundle.js",
-    publicPath: "/",
+    publicPath: "./",
   },
+  devtool: "inline-source-map",
   module: {
     rules: [
       {
@@ -28,6 +31,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "./src/index.html",
+      filename: "index.html"
     }),
     new WebpackPwaManifestPlugin({
       name: "Petgram - Tu app de fotos de mascotas",
