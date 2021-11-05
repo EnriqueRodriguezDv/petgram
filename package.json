@@ -10,7 +10,7 @@
     "dev": "webpack-dev-server --mode=development --history-api-fallback",
     "api/login": "vercel login",
     "api/run": "vercel ./api",
-    "api": "vercel",
+    "api": "vercel ./dist ",
     "serve": "npx serve dist -s"
   },
   "repository": {
