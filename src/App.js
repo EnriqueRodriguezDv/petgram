@@ -4,7 +4,6 @@ import { Redirect, Router } from "@reach/router";
 import { Details } from "./pages/Details";
 import { Logo } from "./components/Logo";
 import { Home } from "./pages/Home";
-// import Favs from "./pages/Favs";
 import User from "./pages/user";
 import NotRegisterUser from "./pages/NotRegisterUser";
 import { Navbar } from "./components/NavBar";

@@ -104,14 +104,17 @@ define("./service-worker.js",['./workbox-d7bd3242'], (function (workbox) { 'use 
    */
 
   workbox.precacheAndRoute([{
-    "url": "./index.html",
-    "revision": "89f05a946c16c17bc6040d49bc8efc1b"
+    "url": "app.bundle.js",
+    "revision": "c68610c462605a103bee0b7ec06d4536"
   }, {
-    "url": "./src_pages_Favs_js.app.bundle.js",
-    "revision": "5aa62fea084a7883fb48cd1ca2a497ca"
+    "url": "index.html",
+    "revision": "4654912140bbbeb7a372cec1ff85818c"
   }, {
-    "url": "./vendors-node_modules_intersection-observer_intersection-observer_js.app.bundle.js",
-    "revision": "bfb0f10a976712b01d920a0f8076df20"
+    "url": "src_pages_Favs_js.app.bundle.js",
+    "revision": "57c05f21e0cfc866bb94ed90d68e6e9a"
+  }, {
+    "url": "vendors-node_modules_intersection-observer_intersection-observer_js.app.bundle.js",
+    "revision": "6d810a2beccc3759e75e4d8fab59c287"
   }], {});
   workbox.registerRoute(/https:\/\/(res.cloudinary.com | images.unsplash.com)/, new workbox.CacheFirst({
     "cacheName": "images",
@@ -123,4 +126,3 @@ define("./service-worker.js",['./workbox-d7bd3242'], (function (workbox) { 'use 
   }), 'GET');
 
 }));
-//# sourceMappingURL=service-worker.js.map

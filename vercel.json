@@ -1,10 +1,12 @@
 {
-    "version": 2,
-    "name": "petgram",
     "routes": [
         {
             "src": "(.*).js",
             "dest": "/$1.js"
+        },
+        {
+            "src": "(.*).png",
+            "dest": "/$1.png"
         },
         {
             "src": "(.*).json",
@@ -13,11 +15,6 @@
         {
             "src": "/.*",
             "dest": "/index.html"
-        },
-        {
-            "src": "/(.*).png",
-            "dest": "/$1.png"
         }
-    ],
-    "builds": [{ "src": "index.js", "use": "@now/node" }]
+    ]
 }
